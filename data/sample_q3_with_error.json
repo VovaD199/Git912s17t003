@@ -1,0 +1,35 @@
+{
+  "quarter_id": 3,
+  "budget": {
+    "month_1": {
+      "income_total": 21000,
+      "expense_items": {
+        "food": 4600,
+        "transport": 1300,
+        "entertainment": 1900,
+        "housing": 5600,
+        "other": 1200
+      }
+    },
+    "month_2": {
+      "income_total": 20800,
+      "expense_items": {
+        "food": 4550,
+        "transport": 1250,
+        "entertainment": 1700,
+        "housing": 5600,
+        "other": 1100
+      }
+    },
+    "month_3": {
+      "income_total": 21200,
+      "expense_items": {
+        "food": 4700,
+        "transport": "unknown",
+        "entertainment": 1750,
+        "housing": 5650,
+        "other": 1150
+      }
+    }
+  }
+}

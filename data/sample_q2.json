@@ -1,0 +1,38 @@
+{
+  "period": "Q2",
+  "data": [
+    {
+      "name": "Місяць 1",
+      "salary": 19500,
+      "costs": [
+        {"category": "Їжа", "value": 4100},
+        {"category": "Транспорт", "value": 1100},
+        {"category": "Розваги", "value": 1500},
+        {"category": "Житло / Комунальні", "value": 5400},
+        {"category": "Інше", "value": 950}
+      ]
+    },
+    {
+      "name": "Місяць 2",
+      "salary": 19800,
+      "costs": [
+        {"category": "Їжа", "value": 4300},
+        {"category": "Транспорт", "value": 1150},
+        {"category": "Розваги", "value": 1700},
+        {"category": "Житло / Комунальні", "value": 5450},
+        {"category": "Інше", "value": 1000}
+      ]
+    },
+    {
+      "name": "Місяць 3",
+      "salary": 20500,
+      "costs": [
+        {"category": "Їжа", "value": 4500},
+        {"category": "Транспорт", "value": 1200},
+        {"category": "Розваги", "value": 1650},
+        {"category": "Житло / Комунальні", "value": 5500},
+        {"category": "Інше", "value": 1050}
+      ]
+    }
+  ]
+}
