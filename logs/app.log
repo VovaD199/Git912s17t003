@@ -1,0 +1,210 @@
+2026-03-29 20:39:37,171 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 20:39:42,110 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 20:39:47,098 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:55:37,301 | INFO | Початок нормалізації CSV: quarterly_budget.csv
+2026-03-29 23:55:37,301 | INFO | Пропущено службовий рядок CSV: ВСЬОГО | ДОХІД
+2026-03-29 23:55:37,309 | INFO | CSV нормалізовано успішно: quarterly_budget.csv | records=1
+2026-03-29 23:55:37,314 | INFO | Визначено формат JSON: v1 | file=sample_q1.json
+2026-03-29 23:55:37,314 | INFO | Початок нормалізації JSON V1: sample_q1.json
+2026-03-29 23:55:37,330 | INFO | Завантаження JSON-файлу: bad_q3.json
+2026-03-29 23:55:37,330 | INFO | Визначено формат JSON: v3 | file=bad_q3.json
+2026-03-29 23:55:37,330 | INFO | Початок нормалізації JSON V3: bad_q3.json
+2026-03-29 23:55:37,331 | WARNING | Виявлено підозрілий запис у вересневих даних: bad_q3.json | payload={"income_total": 12000, "expense_items": {"food": 1300, "transport": "unknown"}}
+2026-03-29 23:55:37,331 | ERROR | Не вдалося обробити JSON: bad_q3.json
+Traceback (most recent call last):
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 673, in normalize_all_sources
+    normalized = normalize_json_payload(
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 604, in normalize_json_payload
+    return normalize_json_format_v3(data, year=year, source_file=source_file)
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 530, in normalize_json_format_v3
+    validate_september_record(month_number, month_payload, source_file=source_file)
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 207, in validate_september_record
+    raise InvalidBudgetDataError(
+data_normalizer.InvalidBudgetDataError: У вересневих даних знайдено спеціально закладену помилку
+2026-03-29 23:55:37,332 | INFO | Завантаження CSV-файлу: quarterly_budget.csv
+2026-03-29 23:55:37,339 | INFO | Початок нормалізації CSV: quarterly_budget.csv
+2026-03-29 23:55:37,341 | INFO | CSV нормалізовано успішно: quarterly_budget.csv | records=1
+2026-03-29 23:55:37,342 | INFO | Фінальний річний DataFrame сформовано | rows=1
+2026-03-29 23:55:37,347 | INFO | Визначено формат JSON: v1 | file=bad_categories.json
+2026-03-29 23:55:37,347 | INFO | Початок нормалізації JSON V1: bad_categories.json
+2026-03-29 23:55:46,936 | INFO | Початок нормалізації CSV: quarterly_budget.csv
+2026-03-29 23:55:46,938 | INFO | Пропущено службовий рядок CSV: ВСЬОГО | ДОХІД
+2026-03-29 23:55:46,940 | INFO | CSV нормалізовано успішно: quarterly_budget.csv | records=1
+2026-03-29 23:55:46,946 | INFO | Визначено формат JSON: v1 | file=sample_q1.json
+2026-03-29 23:55:46,947 | INFO | Початок нормалізації JSON V1: sample_q1.json
+2026-03-29 23:55:46,963 | INFO | Завантаження JSON-файлу: bad_q3.json
+2026-03-29 23:55:46,963 | INFO | Визначено формат JSON: v3 | file=bad_q3.json
+2026-03-29 23:55:46,963 | INFO | Початок нормалізації JSON V3: bad_q3.json
+2026-03-29 23:55:46,963 | WARNING | Виявлено підозрілий запис у вересневих даних: bad_q3.json | payload={"income_total": 12000, "expense_items": {"food": 1300, "transport": "unknown"}}
+2026-03-29 23:55:46,964 | ERROR | Не вдалося обробити JSON: bad_q3.json
+Traceback (most recent call last):
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 673, in normalize_all_sources
+    normalized = normalize_json_payload(
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 604, in normalize_json_payload
+    return normalize_json_format_v3(data, year=year, source_file=source_file)
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 530, in normalize_json_format_v3
+    validate_september_record(month_number, month_payload, source_file=source_file)
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 207, in validate_september_record
+    raise InvalidBudgetDataError(
+data_normalizer.InvalidBudgetDataError: У вересневих даних знайдено спеціально закладену помилку
+2026-03-29 23:55:46,964 | INFO | Завантаження CSV-файлу: quarterly_budget.csv
+2026-03-29 23:55:46,973 | INFO | Початок нормалізації CSV: quarterly_budget.csv
+2026-03-29 23:55:46,975 | INFO | CSV нормалізовано успішно: quarterly_budget.csv | records=1
+2026-03-29 23:55:46,980 | INFO | Фінальний річний DataFrame сформовано | rows=1
+2026-03-29 23:55:46,998 | INFO | Визначено формат JSON: v1 | file=bad_categories.json
+2026-03-29 23:55:46,998 | INFO | Початок нормалізації JSON V1: bad_categories.json
+2026-03-29 23:56:27,206 | INFO | Початок нормалізації CSV: quarterly_budget.csv
+2026-03-29 23:56:27,208 | INFO | Пропущено службовий рядок CSV: ВСЬОГО | ДОХІД
+2026-03-29 23:56:27,209 | INFO | CSV нормалізовано успішно: quarterly_budget.csv | records=1
+2026-03-29 23:56:27,213 | INFO | Визначено формат JSON: v1 | file=sample_q1.json
+2026-03-29 23:56:27,213 | INFO | Початок нормалізації JSON V1: sample_q1.json
+2026-03-29 23:56:27,214 | INFO | Завантаження JSON-файлу: bad_q3.json
+2026-03-29 23:56:27,214 | INFO | Визначено формат JSON: v3 | file=bad_q3.json
+2026-03-29 23:56:27,214 | INFO | Початок нормалізації JSON V3: bad_q3.json
+2026-03-29 23:56:27,214 | WARNING | Виявлено підозрілий запис у вересневих даних: bad_q3.json | payload={"income_total": 12000, "expense_items": {"food": 1300, "transport": "unknown"}}
+2026-03-29 23:56:27,214 | ERROR | Не вдалося обробити JSON: bad_q3.json
+Traceback (most recent call last):
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 673, in normalize_all_sources
+    normalized = normalize_json_payload(
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 604, in normalize_json_payload
+    return normalize_json_format_v3(data, year=year, source_file=source_file)
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 530, in normalize_json_format_v3
+    validate_september_record(month_number, month_payload, source_file=source_file)
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 207, in validate_september_record
+    raise InvalidBudgetDataError(
+data_normalizer.InvalidBudgetDataError: У вересневих даних знайдено спеціально закладену помилку
+2026-03-29 23:56:27,214 | INFO | Завантаження CSV-файлу: quarterly_budget.csv
+2026-03-29 23:56:27,230 | INFO | Початок нормалізації CSV: quarterly_budget.csv
+2026-03-29 23:56:27,230 | INFO | CSV нормалізовано успішно: quarterly_budget.csv | records=1
+2026-03-29 23:56:27,230 | INFO | Фінальний річний DataFrame сформовано | rows=1
+2026-03-29 23:56:27,230 | INFO | Визначено формат JSON: v1 | file=bad_categories.json
+2026-03-29 23:56:27,230 | INFO | Початок нормалізації JSON V1: bad_categories.json
+2026-03-29 23:56:50,678 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:56:54,881 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:57:01,199 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:57:07,892 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:57:08,867 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:57:08,881 | INFO | Користувач запустив обробку даних
+2026-03-29 23:57:08,882 | INFO | Завантаження JSON-файлу: sample_q1.json
+2026-03-29 23:57:08,883 | INFO | Визначено формат JSON: v1 | file=sample_q1.json
+2026-03-29 23:57:08,883 | INFO | Початок нормалізації JSON V1: sample_q1.json
+2026-03-29 23:57:08,887 | INFO | Завантаження JSON-файлу: sample_q2.json
+2026-03-29 23:57:08,888 | INFO | Визначено формат JSON: v2 | file=sample_q2.json
+2026-03-29 23:57:08,888 | INFO | Початок нормалізації JSON V2: sample_q2.json
+2026-03-29 23:57:08,890 | INFO | Завантаження JSON-файлу: sample_q3_with_error.json
+2026-03-29 23:57:08,891 | INFO | Визначено формат JSON: v3 | file=sample_q3_with_error.json
+2026-03-29 23:57:08,891 | INFO | Початок нормалізації JSON V3: sample_q3_with_error.json
+2026-03-29 23:57:08,891 | WARNING | Виявлено підозрілий запис у вересневих даних: sample_q3_with_error.json | payload={"income_total": 21200, "expense_items": {"food": 4700, "transport": "unknown", "entertainment": 1750, "housing": 5650, "other": 1150}}
+2026-03-29 23:57:08,892 | ERROR | Не вдалося обробити JSON: sample_q3_with_error.json
+Traceback (most recent call last):
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 673, in normalize_all_sources
+    normalized = normalize_json_payload(
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 604, in normalize_json_payload
+    return normalize_json_format_v3(data, year=year, source_file=source_file)
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 530, in normalize_json_format_v3
+    validate_september_record(month_number, month_payload, source_file=source_file)
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 207, in validate_september_record
+    raise InvalidBudgetDataError(
+data_normalizer.InvalidBudgetDataError: У вересневих даних знайдено спеціально закладену помилку
+2026-03-29 23:57:08,893 | INFO | Завантаження CSV-файлу: quarterly_budget.csv
+2026-03-29 23:57:08,898 | INFO | Початок нормалізації CSV: quarterly_budget.csv
+2026-03-29 23:57:08,898 | INFO | Пропущено службовий рядок CSV: ВСЬОГО | ДОХІД
+2026-03-29 23:57:08,898 | INFO | Пропущено службовий рядок CSV: ВСЬОГО | ВИТРАТИ
+2026-03-29 23:57:08,898 | INFO | Пропущено службовий рядок CSV: ВСЬОГО | БАЛАНС
+2026-03-29 23:57:08,913 | INFO | CSV нормалізовано успішно: quarterly_budget.csv | records=15
+2026-03-29 23:57:08,920 | INFO | Фінальний річний DataFrame сформовано | rows=51
+2026-03-29 23:57:13,397 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:57:19,195 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:58:45,410 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:58:46,964 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:58:56,098 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:59:04,738 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:59:10,716 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:59:12,231 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:59:12,248 | INFO | Користувач запустив обробку даних
+2026-03-29 23:59:12,250 | WARNING | Неправильна кількість JSON-файлів: 2
+2026-03-29 23:59:22,809 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:59:33,631 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:59:36,786 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:59:41,349 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:59:43,168 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-29 23:59:43,192 | INFO | Користувач запустив обробку даних
+2026-03-29 23:59:43,194 | WARNING | CSV-файл не завантажено
+2026-03-30 00:00:12,712 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:00:14,124 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:00:14,135 | INFO | Користувач запустив обробку даних
+2026-03-30 00:00:14,136 | WARNING | Неправильна кількість JSON-файлів: 4
+2026-03-30 00:00:25,539 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:00:25,556 | INFO | Користувач запустив обробку даних
+2026-03-30 00:00:25,558 | WARNING | Неправильна кількість JSON-файлів: 4
+2026-03-30 00:00:30,464 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:00:31,259 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:00:32,064 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:00:32,724 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:00:48,632 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:00:50,747 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:01:43,966 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:01:53,852 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:01:55,610 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:01:55,627 | INFO | Користувач запустив обробку даних
+2026-03-30 00:01:55,629 | WARNING | CSV-файл не завантажено
+2026-03-30 00:02:02,772 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:02:02,788 | INFO | Користувач запустив обробку даних
+2026-03-30 00:02:02,790 | WARNING | CSV-файл не завантажено
+2026-03-30 00:02:33,848 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:02:38,159 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:02:39,089 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:02:39,106 | INFO | Користувач запустив обробку даних
+2026-03-30 00:02:39,108 | WARNING | CSV-файл не завантажено
+2026-03-30 00:02:56,664 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:02:57,617 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:02:57,635 | INFO | Користувач запустив обробку даних
+2026-03-30 00:02:57,636 | WARNING | Неправильна кількість JSON-файлів: 4
+2026-03-30 00:03:04,804 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:03:07,542 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:03:07,562 | INFO | Користувач запустив обробку даних
+2026-03-30 00:03:07,565 | WARNING | CSV-файл не завантажено
+2026-03-30 00:03:25,759 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:03:26,216 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:03:26,582 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:03:30,430 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:03:31,382 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:03:31,397 | INFO | Користувач запустив обробку даних
+2026-03-30 00:03:31,398 | WARNING | CSV-файл не завантажено
+2026-03-30 00:03:36,064 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:03:37,139 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:03:41,447 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:03:45,750 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:03:46,558 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:03:46,576 | INFO | Користувач запустив обробку даних
+2026-03-30 00:03:46,576 | INFO | Завантаження JSON-файлу: sample_q1.json
+2026-03-30 00:03:46,576 | INFO | Визначено формат JSON: v1 | file=sample_q1.json
+2026-03-30 00:03:46,577 | INFO | Початок нормалізації JSON V1: sample_q1.json
+2026-03-30 00:03:46,578 | INFO | Завантаження JSON-файлу: sample_q2.json
+2026-03-30 00:03:46,578 | INFO | Визначено формат JSON: v2 | file=sample_q2.json
+2026-03-30 00:03:46,579 | INFO | Початок нормалізації JSON V2: sample_q2.json
+2026-03-30 00:03:46,580 | INFO | Завантаження JSON-файлу: sample_q3_with_error.json
+2026-03-30 00:03:46,581 | INFO | Визначено формат JSON: v3 | file=sample_q3_with_error.json
+2026-03-30 00:03:46,582 | INFO | Початок нормалізації JSON V3: sample_q3_with_error.json
+2026-03-30 00:03:46,582 | WARNING | Виявлено підозрілий запис у вересневих даних: sample_q3_with_error.json | payload={"income_total": 21200, "expense_items": {"food": 4700, "transport": "unknown", "entertainment": 1750, "housing": 5650, "other": 1150}}
+2026-03-30 00:03:46,583 | ERROR | Не вдалося обробити JSON: sample_q3_with_error.json
+Traceback (most recent call last):
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 673, in normalize_all_sources
+    normalized = normalize_json_payload(
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 604, in normalize_json_payload
+    return normalize_json_format_v3(data, year=year, source_file=source_file)
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 530, in normalize_json_format_v3
+    validate_september_record(month_number, month_payload, source_file=source_file)
+  File "C:\SoftServeInc\Creating a course\Pythob 912\17 Streamlit\Git912s17t003\Git912s17t003\data_normalizer.py", line 207, in validate_september_record
+    raise InvalidBudgetDataError(
+data_normalizer.InvalidBudgetDataError: У вересневих даних знайдено спеціально закладену помилку
+2026-03-30 00:03:46,584 | INFO | Завантаження CSV-файлу: quarterly_budget.csv
+2026-03-30 00:03:46,586 | INFO | Початок нормалізації CSV: quarterly_budget.csv
+2026-03-30 00:03:46,588 | INFO | Пропущено службовий рядок CSV: ВСЬОГО | ДОХІД
+2026-03-30 00:03:46,589 | INFO | Пропущено службовий рядок CSV: ВСЬОГО | ВИТРАТИ
+2026-03-30 00:03:46,589 | INFO | Пропущено службовий рядок CSV: ВСЬОГО | БАЛАНС
+2026-03-30 00:03:46,590 | INFO | CSV нормалізовано успішно: quarterly_budget.csv | records=15
+2026-03-30 00:03:46,594 | INFO | Фінальний річний DataFrame сформовано | rows=51
+2026-03-30 00:04:03,509 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:04:04,114 | INFO | Запуск Streamlit-застосунку рівня 3
+2026-03-30 00:04:04,915 | INFO | Запуск Streamlit-застосунку рівня 3
